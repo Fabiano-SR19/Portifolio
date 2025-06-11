@@ -1,0 +1,481 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.circulo-menor {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: -1;
+    border-radius: 100%;
+
+}
+
+.circulo-menor1 {
+    bottom: 400px;
+    right: 20%;
+    background-color: #D94C97;
+    animation-name: circulo-menor1;
+    animation-delay: 10s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+
+}
+
+.circulo-menor2 {
+    bottom: 50px;
+    right: 200px;
+    background-color: #ffffff;
+    animation-name: circulo-menor2;
+    animation-delay: 10s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+
+}
+
+.circulo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+    border-radius: 100%;
+
+
+}
+
+@keyframes circulo-menor2 {
+    from {
+        background-color: #ffffff;
+
+    }
+
+    to {
+        background-color: #FC466B;
+
+
+    }
+}
+
+@keyframes circulo-menor1 {
+    from {
+        background-color: #D94C97;
+
+    }
+
+    to {
+        background-color: #8459DF;
+
+    }
+}
+
+@keyframes circulo-direita {
+    from {
+        background-color: #FC466B;
+
+    }
+
+    to {
+        background-color: #ffffff;
+
+    }
+}
+
+@keyframes circulo-esquerda {
+    from {
+        background-color: #8459DF;
+
+    }
+
+    to {
+        background-color: #D94C97;
+
+    }
+}
+
+@keyframes circulo-baixo {
+    from {
+        background-color: #B052C6;
+
+    }
+
+    to {
+        background-color: #5764F4;
+
+    }
+}
+
+@keyframes circulo-baixo-esquerda {
+    from {
+        background-color: #5764F4;
+
+    }
+
+    to {
+        background-color: #B052C6;
+
+    }
+}
+
+.circulo-direita {
+    left: -50px;
+    background-color: #FC466B;
+    animation-name: circulo-direita;
+    animation-delay: 10s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+.circulo-esquerda {
+    top: 12px;
+    right: 100px;
+    background-color: #8459DF;
+    animation-name: circulo-esquerda;
+    animation-delay: 10s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+
+
+}
+
+.circulo-baixo {
+    bottom: 20px;
+    left: 10px;
+    background-color: #B052C6;
+    animation-name: circulo-baixo;
+    animation-delay: 10s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+.circulo-baixo-esquerda {
+    top: 400px;
+    left: 20%;
+    background-color: #5764F4;
+    animation-name: circulo-baixo-esquerda;
+    animation-delay: 10s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+.navegaçao {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(90deg, #FC466B, #3F5EFB)1;
+
+}
+
+.link-home {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 15px;
+    display: block;
+}
+
+.link-home:hover {
+    color: #FF5C8D;
+    border-radius: 3px;
+    transform: scale(1.1);
+
+}
+
+.menu {
+    display: none;
+    max-width: 100%;
+    padding: 10px 0px;
+    position: relative;
+    background-color: black;
+
+}
+
+.menu i {
+    display: block;
+    padding-left: 14px;
+    color: white;
+    font-size: 20px;
+
+}
+
+.sub-menu {
+    position: absolute;
+    list-style: none;
+    flex-direction: column;
+    background-color: #000;
+    margin-top: 26px;
+    width: 100%;
+    padding: 10px;
+    display: none;
+}
+
+.sub-menu li {
+    margin-bottom: 5px;
+
+}
+
+.menu:hover .sub-menu {
+    display: flex;
+}
+
+.link-sub-menu {
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.link-sub-menu:hover {
+    color: rgb(12, 17, 46);
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    transform: scale(1.03);
+}
+
+
+.conteiner {
+    max-width: 100%;
+}
+
+.conteinerbio {
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteinerbio h1 {
+    color: white;
+    margin: 15px 15px 10px;
+}
+
+.conteinerbio h3 {
+    margin-bottom: 10px;
+    color: rgb(138, 138, 138);
+}
+
+.imagem-perfil {
+    max-width: 250px;
+    border: 3px solid transparent;
+    border-radius: 100%;
+    background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #FC466B, #3F5EFB) border-box;
+    margin: 10px;
+    box-shadow: 0 4px 15px rgba(252, 70, 107, 0.4), 0 6px 20px rgba(63, 94, 251, 0.3);
+    animation-name: big;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    position: relative;
+    z-index: -1;
+}
+
+@keyframes big {
+
+    0% {
+        bottom: 5px;
+
+    }
+
+    25% {
+        bottom: 8px;
+    }
+
+    40% {
+        bottom: 10px;
+    }
+
+    50% {
+        bottom: 12px;
+    }
+
+    70% {
+        bottom: 14px;
+    }
+
+    100% {
+        bottom: 16px;
+    }
+
+
+}
+
+
+.text-sobremin {
+    margin-top: 80px;
+    color: white;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.text-sobremin h2 {
+    font-weight: 900;
+    font-size: 30px;
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.conteiner-sobremin {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 50px;
+    background: linear-gradient(90deg, #1a1a1a 0%, #2c2c54 100%);
+    color: white;
+    word-break: keep-all;
+    text-align: center;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 20px;
+}
+
+.conteiner-padding {
+    padding: 15px;
+}
+
+.conteiner-projetos {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    border-radius: 20px;
+}
+
+.conteiner-projetos h2 {
+    text-align: center;
+    margin: 20px;
+    width: 100%;
+    font-weight: 900;
+    font-size: 30px;
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card-projetos {
+    width: 300px;
+    border-radius: 20px;
+    max-width: 250px;
+    margin: 5px 5px 15px;
+
+
+}
+
+.card-projetos:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.card-projetos img {
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.card-projetos h3 {
+    color: white;
+    margin: 10px 15px 5px;
+}
+
+.card-projetos p {
+    color: rgb(114, 114, 114);
+    margin: 10px 15px 10px;
+}
+
+footer {
+    padding: 10px;
+    margin-top: 100px;
+    border-top: 3px solid;
+    border-image: linear-gradient(90deg, #FC466B, #3F5EFB)1;
+}
+
+footer h3 {
+    text-align: center;
+    color: rgb(114, 114, 114);
+    margin: 15px;
+    font-size: 13px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 13px;
+    color: rgb(114, 114, 114);
+    margin-bottom: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+    .navegaçao {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .circulo-baixo {
+        display: none;
+    }
+
+    .circulo-menor2 {
+        display: none;
+    }
+
+    .card-sumir {
+        display: none;
+    }
+}
